@@ -26,7 +26,7 @@ public class JpaPersistence {
 
         try {
             // 비영속 상태 => JPA와 관련이 없는 상태
-            Member member = new Member();
+            MemberTest member = new MemberTest();
             member.setId(1L);
             member.setName("yunho");
 

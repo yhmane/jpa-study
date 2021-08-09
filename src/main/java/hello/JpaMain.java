@@ -15,7 +15,7 @@ public class JpaMain {
         transaction.begin();
 
         try {
-            Member member = new Member();
+            MemberTest member = new MemberTest();
             member.setId(2L);
             member.setName("yunho");
 

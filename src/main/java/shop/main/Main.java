@@ -5,6 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
+import shop.domain.Book;
 import shop.domain.Order;
 import shop.domain.OrderItem;
 
@@ -18,10 +19,10 @@ public class Main {
         transaction.begin();
 
         try {
-            Order order = new Order();
-            order.addOrderItem(new OrderItem());
-
-            entityManager.persist(order);
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("김영한");
+            entityManager.persist(book);
 
             transaction.commit();
         } catch (Exception e) {
